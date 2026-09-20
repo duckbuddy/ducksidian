@@ -1,0 +1,62 @@
+/* Fonts */ 
+body {
+
+}
+
+/* Colors */ 
+:root 
+{
+/* Dark Theme Colors */ 
+  --bg01-dark: #2d353b;
+  --bg02-dark: #2b2827;
+  --bg03-dark: #594b45;
+
+/* Text Colors */ 
+  --text-01: #d3c6aa;
+  --text-02: #9da9a0;
+  --text-03: #e69875;
+  --text-04: #e67e80;
+
+/* Syntax / Highlighting */
+  --yellow-dark: #dbbe7f;
+  --red-dark:#ad4e49;
+  --blue-dark: #264361;
+  --cyan-dark: #83c092;
+
+
+
+}
+
+.theme-dark {
+  /*Background Colors */
+  --background-primary: var(--bg01-dark);
+  --background-secondary: var(--bg02-dark);
+  --background-modifier-hover: var(--bg03-dark);
+
+/* Text */ 
+  --text-normal: var(--text-01);
+  --text-muted: var(--text-02);
+  --text-accent:var(--text-03);
+  --text-accent-hover: var(--text-04);
+  /* Tags */ 
+  --tag-background: var(--yellow-dark);
+  --tag-color: var(--bg01-dark);
+
+  /* Checklist */ 
+  --checkbox-color: var(--yellow-dark);
+  --checkbox-border-color: var(--yellow-dark);
+}
+
+.theme-dark .tag:hover, .theme-dark .cm-hashtag:hover {
+  background-color: var(--cyan-dark);
+  color: var(--bg01-dark);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* Snippets - Structural Changes that go beyond changing colors goes here*/ 
+body {
+/* Checkbox Stuff */ 
+  --checkbox-radius: 50px;
+}
