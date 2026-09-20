@@ -45,6 +45,10 @@ body {
   /* Checklist */ 
   --checkbox-color: var(--yellow-dark);
   --checkbox-border-color: var(--yellow-dark);
+
+  /* Tables */ 
+  --table-border-color: var(--text-01); !important
+
 }
 
 .theme-dark .tag:hover, .theme-dark .cm-hashtag:hover {
@@ -54,9 +58,14 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.theme-dark td, .theme-dark th {
+  border: 1px solid var(--text-01) !important;
+}
 
 /* Snippets - Structural Changes that go beyond changing colors goes here*/ 
 body {
 /* Checkbox Stuff */ 
   --checkbox-radius: 50px;
+
+
 }
