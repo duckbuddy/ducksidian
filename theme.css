@@ -44,6 +44,7 @@ body {
   --text-accent:var(--text-03);
   --text-accent-hover: var(--text-04);
   --text-highlight-bg: var(--red-dark);
+  --text-selection: var(--bg03-dark);
   /* Tags */ 
   --tag-background: var(--yellow-dark);
   --tag-color: var(--bg01-dark);
@@ -58,6 +59,7 @@ body {
 
   /* Tables */ 
   --table-border-color: var(--text-01) !important;
+  --table-header-background: var(--bg02-dark);
 
   /* Callouts */ 
   --callout-default: var(--blue02-dark);
@@ -86,6 +88,9 @@ body {
  --code-string:var(--green-dark);
  --code-tag:var(--blue-dark);
  --code-value:var(--purple-dark);
+
+ --interactive-normal: var(--bg02-dark);
+ --interactive-accent: var(--bg03-dark);
  
 }
 
@@ -105,5 +110,6 @@ body {
 /* Checkbox Stuff */ 
   --checkbox-radius: 50px;
 
-
+/* Notebook Navigator */ 
+  --nn-theme-list-bg: var(--bg02-dark);
 }
