@@ -19,9 +19,14 @@ body {
 
 /* Syntax / Highlighting */
   --yellow-dark: #dbbe7f;
+  --orange-dark: #ffaf68;
   --red-dark:#ad4e49;
-  --blue-dark: #264361;
+  --blue-dark: #406280;
+  --blue02-dark: #4565a1;
   --cyan-dark: #83c092;
+  --purple-dark: #c791bc;
+  --pink-dark: #cf8a9e;
+  --green-dark:#9ebf60;
 
 
 
@@ -38,17 +43,50 @@ body {
   --text-muted: var(--text-02);
   --text-accent:var(--text-03);
   --text-accent-hover: var(--text-04);
+  --text-highlight-bg: var(--red-dark);
   /* Tags */ 
   --tag-background: var(--yellow-dark);
   --tag-color: var(--bg01-dark);
+
+  /* Links */ 
+  --link-color: var(--green-dark) !important;
+  --link-color-hover: var(--yellow-dark) !important;
 
   /* Checklist */ 
   --checkbox-color: var(--yellow-dark);
   --checkbox-border-color: var(--yellow-dark);
 
   /* Tables */ 
-  --table-border-color: var(--text-01); !important
+  --table-border-color: var(--text-01) !important;
 
+  /* Callouts */ 
+  --callout-default: var(--blue02-dark);
+  --callout-tip: var(--cyan-dark);
+  --callout-info: var(--blue02-dark);
+  --callout-warning: var(--orange-dark);
+  --callout-bug: var(--red-dark);
+  --callout-error: var(--red-dark);
+  --callout-success: var(--green-dark);
+  --callout-question: var(--yellow-dark);
+  --callout-example: var(--purple-dark);
+
+  /* Block Quotes */ 
+ --blockquote-border-color: var(--blue-dark) !important; 
+
+ /* Code */ 
+ --code-background: var(--bg02-dark);
+ --code-normal: var(--text-01);
+ --code-comment:var(--text-02);
+ --code-function:var(--pink-dark);
+ --code-important: var(--orange-dark);
+ --code-keyword: var(--yellow-dark);
+ --code-operator:var(--red-dark);
+ --code-property:var(--cyan-dark);
+ --code-punctuation:var(--orange-dark);
+ --code-string:var(--green-dark);
+ --code-tag:var(--blue-dark);
+ --code-value:var(--purple-dark);
+ 
 }
 
 .theme-dark .tag:hover, .theme-dark .cm-hashtag:hover {
