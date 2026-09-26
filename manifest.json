@@ -1,7 +1,7 @@
 {
-	"name": "ducksidian",
-	"version": "0.0.1",
-	"minAppVersion": "0.0.1",
-	"author": "DuckBuddy",
-	"authorUrl": ""
+  "name": "ducksidian",
+  "version": "0.7.0",
+  "minAppVersion": "0.0.1",
+  "author": "DuckBuddy",
+  "authorUrl": ""
 }

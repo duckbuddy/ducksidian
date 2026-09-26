@@ -27,10 +27,14 @@ body {
   --purple-dark: #c791bc;
   --pink-dark: #cf8a9e;
   --green-dark:#9ebf60;
-
-
-
 }
+
+:root table {
+  --table-border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 
 .theme-dark {
   /*Background Colors */
@@ -45,6 +49,25 @@ body {
   --text-accent-hover: var(--text-04);
   --text-highlight-bg: var(--red-dark);
   --text-selection: var(--bg03-dark);
+
+ /* Code */ 
+ --code-background: var(--bg02-dark);
+ --code-normal: var(--text-01);
+ --code-comment:var(--text-02);
+ --code-function:var(--pink-dark);
+ --code-important: var(--orange-dark);
+ --code-keyword: var(--yellow-dark);
+ --code-operator:var(--red-dark);
+ --code-property:var(--cyan-dark);
+ --code-punctuation:var(--orange-dark);
+ --code-string:var(--green-dark);
+ --code-tag:var(--blue-dark);
+ --code-value:var(--purple-dark);
+
+ --interactive-normal: var(--bg02-dark);
+ --interactive-accent: var(--bg03-dark);
+ 
+
   /* Tags */ 
   --tag-background: var(--yellow-dark);
   --tag-color: var(--bg01-dark);
@@ -75,23 +98,10 @@ body {
   /* Block Quotes */ 
  --blockquote-border-color: var(--blue-dark) !important; 
 
- /* Code */ 
- --code-background: var(--bg02-dark);
- --code-normal: var(--text-01);
- --code-comment:var(--text-02);
- --code-function:var(--pink-dark);
- --code-important: var(--orange-dark);
- --code-keyword: var(--yellow-dark);
- --code-operator:var(--red-dark);
- --code-property:var(--cyan-dark);
- --code-punctuation:var(--orange-dark);
- --code-string:var(--green-dark);
- --code-tag:var(--blue-dark);
- --code-value:var(--purple-dark);
+ /* Graph */ 
+ --graph-line: var(--bg03-dark);
+ --graph-node-tag: var(--yellow-dark);
 
- --interactive-normal: var(--bg02-dark);
- --interactive-accent: var(--bg03-dark);
- 
 }
 
 .theme-dark .tag:hover, .theme-dark .cm-hashtag:hover {
@@ -105,11 +115,17 @@ body {
   border: 1px solid var(--text-01) !important;
 }
 
-/* Snippets - Structural Changes that go beyond changing colors goes here*/ 
+/* Snippets */ 
 body {
+
 /* Checkbox Stuff */ 
   --checkbox-radius: 50px;
 
+/* Tables Rounded Corners - Credit to "FireIsGood"*/ 
+th:first-child {border-top-left-radius: var(--table-border-radius)}
+th:last-child {border-top-right-radius: var(--table-border-radius)}
+tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
+tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
 /* Notebook Navigator */ 
   --nn-theme-list-bg: var(--bg02-dark);
 }
