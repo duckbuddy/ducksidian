@@ -21,8 +21,8 @@ body {
   --yellow-dark: #dbbe7f;
   --orange-dark: #ffaf68;
   --red-dark:#ad4e49;
-  --blue-dark: #406280;
-  --blue02-dark: #4565a1;
+  --blue-dark: #36444f;
+  --blue02-dark: #3e788a;
   --cyan-dark: #83c092;
   --purple-dark: #c791bc;
   --pink-dark: #cf8a9e;
@@ -96,11 +96,47 @@ body {
   --callout-example: var(--purple-dark);
 
   /* Block Quotes */ 
- --blockquote-border-color: var(--blue-dark) !important; 
+ --blockquote-border-color: var(--bg02-dark) !important; 
+ --blockquote-background-color: var(--bg02-dark);
+ --blockquote-font-style: italic !important;
+ --blockquote-border-thickness: 3px;
+ 
+ .markdown-preview-view blockquote {
+   background-image: linear-gradient(to right, var(--bg02-dark), var(--bg01-dark));
+ }
 
  /* Graph */ 
  --graph-line: var(--bg03-dark);
  --graph-node-tag: var(--yellow-dark);
+
+ /* Canvas */ 
+ --canvas-background: var(--bg01-dark);
+ --canvas-dot-pattern: var(--yellow-dark);
+ --canvas-card-label-color: var(--yellow-dark);
+ --canvas-color-1: var(--red-dark);
+ --canvas-color-2: var(--orange-dark);
+ --canvas-color-3: var(--yellow-dark);
+ --canvas-color-4: var(--green-dark);
+ --canvas-color-5: var(--cyan-dark);
+ --canvas-color-6: var(--purple-dark);
+
+ /* Prompt / Command Palette */ 
+ --prompt-border-width: 2px;
+ --prompt-border-color: var(--yellow-dark);
+
+
+ /* Slider */ 
+ --slider-track-background: var(--bg02-dark);
+
+ /* Tabs */ 
+ --tab-background-active: var(--blue-dark);
+ --tab-background-unfocused: var(bg01-dark);
+
+ .workspace-tab-header {
+   background-color: var(--bg01-dark);
+ }
+ 
+ 
 
 }
 
@@ -128,4 +164,16 @@ tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radi
 tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
 /* Notebook Navigator */ 
   --nn-theme-list-bg: var(--bg02-dark);
+
+/* Blockquotes */ 
+.markdown-preview-view blockquote {
+  border-left-width: 3px !important;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
 }
