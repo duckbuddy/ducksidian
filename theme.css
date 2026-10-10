@@ -1,6 +1,24 @@
 /* Fonts */ 
 body {
+  --font-text-theme: "Helvetica";
+  --font-interface-theme: "Helvetica";
+  --font-monospace-theme: "";
+  --font-weight:  400;
+  --bold-modifier: 700;
 
+.markdown-embed * {
+max-height:200px;
+}
+
+/* Embedded Image Sizing */
+.image-embed img {
+  display: block;
+  max-width: 350px;
+  max-height: 350px;
+  width:auto;
+  height:auto;
+  margin: 2em auto 2em auto
+}
 }
 
 /* Colors */ 
@@ -128,9 +146,10 @@ body {
  /* Slider */ 
  --slider-track-background: var(--bg02-dark);
 
+
  /* Tabs */ 
  --tab-background-active: var(--blue-dark);
- --tab-background-unfocused: var(bg01-dark);
+ --tab-background-unfocused: var(--bg01-dark);
 
  .workspace-tab-header {
    background-color: var(--bg01-dark);
@@ -176,4 +195,5 @@ tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radi
   padding-bottom: 10px;
   border-radius: 5px;
 }
+
 }
